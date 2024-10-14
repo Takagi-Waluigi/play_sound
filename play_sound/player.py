@@ -28,6 +28,8 @@ class SoundPlayerClass(Node):
     def listener_callback(self, msg):
         if(msg.data == 0):
             pygame.mixer.music.load('/home/ubunutu/Music/damege.mp3')
+        if(msg.data == 1):
+            pygame.mixer.music.load('/home/ubunutu/Music/get.mp3')
 
         pygame.mixer.music.play(0)
         
